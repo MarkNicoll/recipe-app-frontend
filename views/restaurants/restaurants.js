@@ -3,7 +3,7 @@ import MapView from "react-native-maps";
 import * as WebBrowser from "expo-web-browser";
 import { Marker } from "react-native-maps";
 import { StyleSheet, Text, View, ScrollView } from "react-native";
-import { Button, CheckBox } from "react-native-elements";
+import { Button } from "react-native-elements";
 import dbService from "../../api/dbService";
 
 class Restaurants extends React.Component {
@@ -182,7 +182,6 @@ class Restaurants extends React.Component {
             <Text style={styles.title}>Open now: </Text>
             <Text>{randomRestaurant?.open_now ? "Yes" : "No"}</Text>
           </View> */}
-           <View style={styles.buttonsContainer}>
           <View style={styles.buttonBox}>
             <Button
               style={styles.button}
@@ -194,8 +193,6 @@ class Restaurants extends React.Component {
               onPress={() => this.handleOnRandomClick()}
             />
           </View>
-         
-        </View>
         </View>
 
       
@@ -210,28 +207,15 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     flex: 1,
     alignItems: "center",
-    justifyContent: "center",
   },
   map: {
     width: 400,
-    height: 300,
-    borderWidth: 1,
-    borderRadius: 5,
-    borderColor: "#00afb9",
-    position: "relative",
-  },
-  checkboxContainer: {
-    height: 70,
-    textAlign: "center",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-    margin: 0,
+    height: '58%',
   },
   buttonBox: {
     width: "100%",
     alignSelf: "center",
+    height:'25%'
   },
   button: {
     padding: 20,
@@ -241,6 +225,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     borderColor: "white",
     backgroundColor: "#00afb9",
+    height: '100%'
   },
   buttonTitleStyle: {
     color: "black",
@@ -249,14 +234,12 @@ const styles = StyleSheet.create({
     marginTop: 1,
     marginBottom: 1,
     backgroundColor: "#f2f2f2",
-  },
-  buttonsContainer: {
-    width: "100%",
+    height: '100%'
   },
   mapOverlay: {
     display: "flex",
     flexDirection: "column",
-    height: "30%",
+    height: "40%",
     width: "99%",
     padding: 5,
   },
@@ -268,7 +251,7 @@ const styles = StyleSheet.create({
     margin: 2,
     backgroundColor: "white",
     width: '98%',
-    height: '33%'
+    height: '25%'
 
   },
   title: {

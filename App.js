@@ -11,6 +11,7 @@ import recipeService from "./api/recipeService";
 import Landing from "./views/landing/landing";
 import Main from "./views/main/main";
 import List from "./views/list/list";
+import Dish from "./views/list/dish";
 import Restaurants from "./views/restaurants/restaurants";
 
 const Stack = createStackNavigator();
@@ -30,7 +31,7 @@ class App extends React.Component {
     const location = await Location.getCurrentPositionAsync({});
     const existingLocationData = await dbService.getLocationData();
 
-    if (location.coords !== existingLocationData.coords) {
+    if (location.coords !== existingLocationData?.coords) {
       console.log("Setting new location...");
       dbService.saveLocationToLocalDB(location);
 
@@ -89,6 +90,7 @@ class App extends React.Component {
               component={List}
             />
             <Stack.Screen name="Restaurants" component={Restaurants} />
+            <Stack.Screen name="Edit Dish" component={Dish} />
           </Stack.Navigator>
         </NavigationContainer>
       </SafeAreaProvider>

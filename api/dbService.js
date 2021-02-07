@@ -4,7 +4,7 @@ import {
   saveLocationData,
   getLocationData,
   saveDishData,
-  getDishData
+  getDishData,
 } from "./localStorage/localDB";
 
 const dbService = {
@@ -31,6 +31,6 @@ const dbService = {
   async getDishData() {
     return await getDishData();
   },
-};
+}
 
 export default dbService;

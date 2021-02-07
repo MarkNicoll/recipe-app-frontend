@@ -7,6 +7,14 @@
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "android": {
+      "package": "com.recipeapp",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCjmxwurEe_FlrGyG1kkmLuI6RkgMCqFxE"
+        }
+      }
+    }
   }
 }

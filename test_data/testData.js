@@ -1,7 +1,7 @@
 module.exports = [
     {
         id: 1,
-        name: "Test Recipe 1",
+        name: "Pasta",
         recipe: {
             steps: "1. Test"
         },
@@ -9,7 +9,7 @@ module.exports = [
     },
     {
         id: 2,
-        name: "Test Recipe 2",
+        name: "Pizza",
         recipe: {
             steps: "1. Test"
         },
@@ -17,7 +17,7 @@ module.exports = [
     },
     {
         id: 3,
-        name: "Test Recipe 3",
+        name: "Noodles",
         recipe: {
             steps: "1. Test"
         },
@@ -25,7 +25,7 @@ module.exports = [
     },
     {
         id: 4,
-        name: "Test Recipe 4",
+        name: "Burgers",
         recipe: {
             steps: "1. Test"
         },
@@ -33,7 +33,7 @@ module.exports = [
     },
     {
         id: 5,
-        name: "Test Recipe 5",
+        name: "Hot dogs",
         recipe: {
             steps: "1. Test"
         },
@@ -41,7 +41,7 @@ module.exports = [
     },
     {
         id: 6,
-        name: "Test Recipe 6",
+        name: "Pie",
         recipe: {
             steps: "1. Test"
         },
